@@ -1,0 +1,484 @@
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:black;
+  /* background-image:url(https://static.wixstatic.com/media/cd8772_22a9a03efdc440b79950d9978677fdf2~mv2.gif); */
+  background-image: url(./img/tierra.gif);
+  background-attachment: fixed;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+  z-index: -100;
+  background-size: cover;  
+  height: 300vh;
+  padding:0;
+  margin:0;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  
+}
+
+#invisible_div_on_the_back {
+  position: fixed;
+  z-index: -50;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(173, 29, 255, 0.1);
+  border-radius: 50%;
+  left: 28.4%;
+  top: 18%;
+
+}
+
+#bg-div {
+  position: relative;
+  background-color: rgba(26, 23, 31, 0.8);
+  color: rgba(26, 23, 31, 0.92);
+  width: fit-content;
+  height: fit-content;
+  z-index: 2;
+  border-radius: 30px;
+  padding-right: 4%;
+  padding-left: 4%;
+  padding-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  /* left: 10%; */
+  top: 2%;
+           
+}
+/* 
+#div2 {
+  display: inline-flex !important;
+  position: absolute;
+  padding: 0px;
+  margin: 0%;
+} */
+
+p, iframe {
+  position: relative;
+  top: -8%;
+  margin: 0px;
+  text-align: center;
+  padding: 0px;
+}
+
+p {
+  font-family: 'monospace';
+  font-size: small;
+  font-weight: 700;
+  color: cyan;
+}
+
+iframe {
+  margin-top: 1%;
+}
+
+
+h1 {
+  position: relative;
+  margin: 0%;
+  padding: 0px;
+  padding-top: 3.5%;
+  padding-bottom: 2px;
+  color: rgba(191, 164, 232, 0.8);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium';
+  font-weight: 900;
+  font-style: italic;
+  text-decoration-line: underline;
+  text-shadow: 5px 5px 10px rgba(157, 0, 255, 0.93);
+}
+h1:hover {
+  color: rgba(255, 209, 201, 0.91);
+  text-shadow: -5px -5px 15px rgba(255, 0, 0, 1);
+}
+/* .inline {
+  display: grid;
+} */
+
+#left-div {
+  width: 20%;
+  margin: 0px;
+  position: relative;
+  height: 380px;
+  display: block;
+  border: 3px;
+  border-color: yellowgreen;
+  margin-left: 8%;
+
+}
+
+#rigth-div {
+  position: relative;
+  width: 80%;
+  margin: 0;
+  /* margin-left: 3%; */
+  height: 380px;
+  width: fit-content;
+  top: -20px;
+  object-fit: contain;
+}
+
+/* h3 {
+  padding-top: 0px;
+  color: aqua;
+  margin-top: 0%;
+  margin-right: 5%;
+  left: 0%;
+  position: relative;
+  top: -57px;
+
+  
+} */
+.accordion {
+  background-color: rgba(78, 69, 69, 1);
+  color: turquoise;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px 100px 12px 100%;
+  position: relative;
+  /* top: 50%; */
+  border: none;
+  text-align: left !important;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  display: flex;
+  margin: 0%;
+  border-radius: 4px;
+  justify-items: center;
+  margin-left: 2%;
+  font-weight: 900;
+  top: -57px;
+  z-index: 100;
+}
+
+li { 
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.active, .accordion:hover {
+  background-color: rgba(86, 76, 94, 1);
+}
+
+.panel {
+  padding:  0px 200px 0px 0px;
+  display: none;
+  background-color: rgba(29, 30, 30, 0.80);
+  color: turquoise;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  top: -57px;
+  margin: 0%;
+  z-index: 80;
+  
+}
+
+.li_click_listener {
+  list-style-type: disc;
+  margin-left: 15px;
+}
+
+table, th, td, tr {
+  border: 2px solid; 
+  color: rgba(127, 158, 161, 0.18);
+  padding: 0;
+  margin: 0%;
+  position:relative;
+  height: inherit;
+  width: fit-content;
+  align-items: center;
+}
+/* 
+.td-1 {
+  margin-left: 2%;
+} */
+
+table {
+  /* object-position: center; */
+  position: relative;
+  margin-left: 4%;
+  height: 570px;
+  width: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+#it {
+  padding-top: 0px;
+  color: aqua;
+  margin-top: 0%;
+  margin-left: 0%;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  top: -57px;
+  font-weight: 900;
+  list-style-type: none;
+}
+
+#it:hover, li:hover {
+  text-shadow: 5px 5px 10px ;
+}
+
+.li-footer {
+  font-size: 17px;
+  font-weight: bold;
+  color: lightskyblue;
+  padding: 3px;
+  list-style-type: none;
+}
+
+a {
+  color: chartreuse;
+}
+
+#hv {
+  color: cyan;
+}
+
+#hv:hover {
+  color: white;
+  text-shadow: 2px 2px 3px rgba(0, 255, 252, 1);
+  
+}
+
+
+
+/* 
+<!-- HTML !-->
+<button class="button-29" role="button">Button 29</button> */
+
+/* CSS */
+.button-29 {
+  
+  width: 100%;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #232d2ff2 0, #18131acf 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: turquoise;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding: 12px 70px 12px 160%;
+  position: relative;
+  text-align: left !important;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 15px;
+}
+
+.button-29:focus {
+  background-image: radial-gradient(100% 100% at 100% 0, #564c5e 0, #18131acf 100%);
+  box-shadow: #232d2ff2 0 0 0 1.5px inset, rgba(45, 35, 66, .8) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #232d2ff2 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  background-image: radial-gradient(100% 100% at 100% 0, #564c5e 0, #18131acf 100%);
+  box-shadow: rgba(45, 35, 66, .7) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #232d2ff2 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  background-image: radial-gradient(100% 100% at 100% 0, #564c5e 0, #0e0d0ef0 100%);
+  box-shadow: #0e0d0ef0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* tool tip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 10%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+ /* flip card */
+
+ .flip-card {
+  z-index: 4;
+  background-color: transparent;
+  width: 100px;
+  height: 100px;
+  perspective: 1000px;
+  position: absolute;
+  top: 67%;
+  left: 20%;
+}
+
+.flip-card-inner {
+  z-index: 4;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(540deg);
+  z-index: 4;
+}
+
+.flip-card-front, .flip-card-back {
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  z-index: 4;
+  background-color: transparent;
+  
+}
+
+.flip-card-back {
+  z-index: 4;
+  background-color: transparent;
+  
+  transform: rotateY(360deg);
+}
+
+.flip-card:active, .flip-card-back:active, .flip-card-front:active {
+  margin: 0%;
+  padding: 0%;
+}
+
+ .flip-card-inner:active {
+   position: relative;
+   top: 7px;
+   animation: m_y 2.5 ease-in-out forwards;
+   -moz-animation: m_y 2.5 ease-in-out forwards;
+   -webkit-animation: m_y 2.5 ease-in-out forwards;
+}
+/* no se por que no me funciona */
+/*   
+@-moz-keyframes m_y {
+  0% {top: 70%}
+  50% {top: 40%}
+  100% {top: 67%}
+}   
+@-webkit-keyframes m_y {
+  0% {top: 70%}
+  50% {top: 40%}
+  100% {top: 67%}
+}
+@keyframes m_y {
+  0% {top: 70%}
+  50% {top: 40%}
+  100% {top: 67%}
+} */
+
+/* end  of the flip + animation of the card */
+.ms {
+  z-index: 4;
+  text-align: center;
+  font-size: 90px;
+  position: fixed;
+  top: -25%;
+  left: 10%;
+  cursor: pointer;
+  text-shadow: 3px 2px 16px purple, -4px -3px 20px #00d6bf;
+}
+
+.ms:hover {
+  text-shadow: 0px 4px 14px rgba(181, 0, 255, 1), 0px -5px 18px rgba(0, 255, 250, 1);
+  left: -1.5px;
+}
+/* botton scroll back */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 89;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  /* background-color: rgba(255, 255, 255, 0.08); */
+  background-image: radial-gradient(rgba(24, 29, 30, 0.8), rgba(28, 24, 30, 0.8), rgba(30, 24, 27, 8));
+  opacity: 0.9;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 14px;
+  
+}
+
+#myBtn:hover {
+  background-image: linear-gradient(to right, rgba(151, 91, 157, 0.7), rgba(16, 14, 16, 1));
+  text-shadow: 0px 2px 5px cyan, 0px -2px 5px cyan;
+  opacity: 0.8;
+}
+
+#rf {
+  cursor:context-menu;
+}
